@@ -16,7 +16,6 @@ nav{
     width: 100%;
     display: flex;
     align-items: center;
-    gap: ;
 }
 #logo{
     height: 80px;
@@ -40,7 +39,7 @@ p{
     font-size: clamp(15px, 1vw, 20px);
     color: rgb(0, 0, 0);
     text-align: justify;
-    padding: 2%;
+    padding: 1%;
 }
 nav{
     padding: 1.5%;
@@ -68,7 +67,7 @@ aside{
     float: right;
     background-color: #aaa4a4;
     color: rgb(0, 0, 0);
-     width: 30%;
+    width: 30%;
     height: auto;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -91,25 +90,40 @@ body{
 }
 main{
     border: 3px solid rgb(151, 20, 20);
-    width: clamp(100%, 20vw, 300px);
-    min-height: 100%;
     background-color: rgb(77, 76, 76);
-    max-width:  2000px;
-    max-height: 100%;
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 img{
     width: clamp(80px, 20vw, 300px);
     height: auto;
     border-radius: 50%;
 }
-.container{
+.container{ 
     display: flex;
-    align-items: center; /* alinha verticalmente */
-    justify-content: space-between; /* separa os elementos */
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    max-width: 1200px;
+    margin: auto;  
 }
-section{
-    
+@media(max-width: 768px){
+
+    .container{
+        flex-direction: column;
+        text-align: center;
+
+        padding: 20px;
+        gap: 30px;
+    } 
+    p{
+    text-align: left;
+    font-size: 16px;
+    line-height: 1.6;
 }
-p{
-   
+
 }
